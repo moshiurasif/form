@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body class="bg-[#A22B56] font-montserrat">
+    <form action="" class="bg-[#74203E] md:max-w-xl md:mt-6 mx-auto px-5 py-5 md:px-20 md:py-10">
+        <div>
+            <label class="block md:inline-block md:w-[150px] md:mb-3 text-white" for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your Name"
+                class="px-2 py-1 mb-4 w-[100%] md:w-[220px] focus:outline-none" required>
+        </div>
+        <div>
+            <label class="block md:inline-block md:w-[150px] md:mb-3 text-white" for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Your Email"
+                class="px-2 py-1 mb-4 w-[100%] md:w-[220px] focus:outline-none" required>
+        </div>
+        <div>
+            <label class="inline-block w-[150px] md:mb-3 text-white" for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Your Password" min="8" max="30"
+                class="px-2 py-1 mb-4 w-[100%] md:w-[220px] focus:outline-none" required>
+        </div>
+        <div>
+            <label class="block md:inline-block md:w-[150px] md:mb-3 text-white" for="phone">Phone Number:</label>
+            <input type="text" name="phone" id="phone" minlength="11"
+                class="px-2 py-1 mb-2 w-[100%] md:w-[220px] focus:outline-none">
+        </div>
+        <div class="mb-4 md:mb-0">
+            <label class="block md:inline-block md:w-[150px] md:mb-3 text-white" : for="">Gender:</label>
+            <label class="text-white" for="male">Male:</label>
+            <input class="checked:bg-gray-300" type="radio" name="s" id="male" checked>
+            <label class="text-white" for="female">Female:</label>
+            <input type="radio" name="s" id="female">
+            <label class="text-white" for="other">Other:</label>
+            <input type="radio" name="s" id="other">
+        </div>
+        <div>
+            <label class="block md:inline-block md:w-[150px] md:mb-3 text-white" for="lang">Language:</label>
+            <select name="lang" id="lang" class="text-black px-2 py-2 mb-4 w-[100%] md:w-[220px] focus:outline-none">
+                <option class="px-2" value="" selected>Select Language</option>
+                <option class="px-2" value="">Bengali</option>
+                <option class="px-2" value="">English</option>
+                <option class="px-2" value="">Hindi</option>
+                <option class="px-2" value="">Chinese</option>
+                <option class="px-2" value="">Russian</option>
+                <option class="px-2" value="">Korean</option>
+            </select>
+        </div>
+        <div>
+            <label class="block md:inline-block md:w-[150px] md:mb-3 text-white" for="zipCode">Zip Code:</label>
+            <input type="text" name="zipCode" id="zipCode"
+                class="px-2 py-1 mb-4 w-[100%] md:w-[220px] focus:outline-none">
+        </div>
+        <div>
+            <label class="block md:inline-block md:w-[150px] md:mb-3 text-white" for="about">About:</label>
+            <textarea name="about" id="about"
+                class="px-2 md:w-[220px] mb-4 w-[100%] md:mb-0 focus:outline-none"></textarea>
+        </div>
+        <div>
+            <input
+                class=" bg-white px-10 py-2 text-gray-800 rounded text-center font-bold text-xl cursor-pointer w-[100%]"
+                type="submit" value="Register">
+        </div>
+    </form>
+</body>
+
+</html>
